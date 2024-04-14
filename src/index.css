@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000; /* Black body background */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Update the background for the root element */
+#root {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000; /* Black body background with transparency */
+}
+
+/* Add neon effect to the container class */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: neon-pulse 1.5s infinite alternate; /* Neon pulse animation */
+}
+
+/* Neon pulse animation keyframes */
+@keyframes neon-pulse {
+  0% {
+    filter: drop-shadow(0 0 30px #ff00f2);
+  }
+  100% {
+    filter: drop-shadow(0 0 20px #ff69b4), drop-shadow(0 0 30px #ff69b4), drop-shadow(0 0 40px #ff69b4);
+  }
+}
+
+/* Apply styles to the form */
+.form-group {
+  width: 100%;
+  max-width: 400px;
+}
+
+.bg-dark-purple {
+  background-color: #4b0082; /* Dark purple */
+}
+
+.text-light {
+  color: #ffffff; /* White */
+}
+
+.btn-light {
+  background-color: #ff69b4; /* Hot pink */
+  color: #fff; /* White */
+  border-color: #ff69b4; /* Hot pink */
+}
+
+.btn-light:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+  color: #fff; /* White on hover */
+}
+
+.form-control {
+  background-color: #0d0d0d; /* Dark grey */
+  color: #ffffff; /* White */
+  border-color: #ff69b4; /* Hot pink */
+  border-radius: 10px;
+}
+
+.form-control:focus {
+  background-color: #1a1a1a; /* Darker grey on focus */
+  color: #ffffff; /* White on focus */
+  border-color: #ff69b4; /* Hot pink on focus */
+  box-shadow: 0 0 0 0.25rem rgba(255,105,180,0.5); /* Neon pink glow on focus */
+}
+
+.form-label {
+  color: #fff; /* White form label */
+}
+
+.form-text {
+  color: #ff69b4; /* Hot pink form helper text */
+}
