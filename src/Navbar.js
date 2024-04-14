@@ -19,6 +19,12 @@ import { useNavigate } from 'react-router-dom';
   const gotocreateblog = () => {
     navigate('/Createblog');
 }
+const gotocontactus = () => {
+  navigate('/Contactus');
+}
+const gotoaboutus = () => {
+  navigate('/Aboutus');
+}
 
   return (
     <Navbar expand="lg" bg="dark" variant="dark">
@@ -36,8 +42,8 @@ import { useNavigate } from 'react-router-dom';
                 <NavDropdown.Item href="/home">Newest Blogs</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link  className="text-light" onClick={gotocreateblog}>Create Blog</Nav.Link>
-            <Nav.Link href="/contactus" className="text-light">Contact Us</Nav.Link>
-            <Nav.Link href="/aboutus" className="text-light">About Us</Nav.Link>
+            <Nav.Link  className="text-light" onClick={gotocontactus}>Contact Us</Nav.Link>
+            <Nav.Link  className="text-light" onClick={gotoaboutus}>About Us</Nav.Link>
           </Nav>
   
           <Nav>
