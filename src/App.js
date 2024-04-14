@@ -17,14 +17,14 @@ function App() {
 <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/Aboutus" element={<AboutUs/>}/>
-        <Route path="/Contactus" element={<ContactUs/>}/>
-        <Route path='/home' element={<Blogscontent/>}/>
+        <Route path="https://writera.netlify.app/" element={<MainPage />} />
+        <Route path="https://writera.netlify.app/Aboutus" element={<AboutUs/>}/>
+        <Route path="https://writera.netlify.app/Contactus" element={<ContactUs/>}/>
+        <Route path='https://writera.netlify.app/home' element={<Blogscontent/>}/>
 
-        <Route path="/Signin" element={<Signin />} />
-        <Route path="/signup" element={<Signup />} />
-         <Route path="/Createblog" element={<Createblog/>}/> 
+        <Route path="https://writera.netlify.app/Signin" element={<Signin />} />
+        <Route path="https://writera.netlify.app/signup" element={<Signup />} />
+         <Route path="https://writera.netlify.app/Createblog" element={<Createblog/>}/> 
          <Route path="*" element={<NotFoundPage/>}/>
       </Routes>
   </BrowserRouter>
